@@ -1,0 +1,263 @@
+/* Dashboard */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.dashboard-header {
+  margin-bottom: 3rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.dashboard-header p {
+  color: #64748b;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.course-card .course-image {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.course-card .course-content {
+  padding: 1.25rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+  margin: 1rem 0 0.5rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: var(--success);
+  height: 100%;
+}
+
+.progress-text {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+/* Course Details */
+.course-details-page {
+  padding-bottom: 4rem;
+}
+
+.course-header {
+  background: var(--secondary-color);
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: -2rem auto 0;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.main-col {
+  flex: 2;
+}
+
+.sidebar-col {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .course-layout {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+
+.video-player iframe {
+  border-radius: var(--border-radius);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.placeholder-video {
+  height: 450px;
+  background: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+.course-info-tabs {
+  margin-top: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.enrollment-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 80px;
+}
+
+.price-display {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.big-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.strike-price {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+
+.guarantee-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 1rem;
+}
+
+.curriculum-list {
+  margin-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+.curriculum-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.curriculum-item:hover {
+  background: #f8fafc;
+}
+
+.curriculum-item.active {
+  background: #eff6ff;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.curriculum-item.locked {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Profile */
+.profile-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.profile-card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 3rem;
+  text-align: center;
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.role-badge {
+  display: inline-block;
+  background: #f1f5f9;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.profile-details {
+  margin-top: 3rem;
+  text-align: left;
+  display: grid;
+  gap: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 2rem;
+}
+
+.detail-group label {
+  display: block;
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.profile-actions {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
